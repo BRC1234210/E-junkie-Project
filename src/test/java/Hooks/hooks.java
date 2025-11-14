@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 import utility.BaseDriver;
 
-public class Hooks {
+public class hooks {
 
     public Logger LOGGER = LogManager.getLogger(this.getClass());
 

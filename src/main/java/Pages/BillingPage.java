@@ -25,7 +25,7 @@ public class BillingPage extends BasePage{
     private WebElement invalidMessageText;
 
     @FindBy(xpath = "//input[@placeholder='Name On Card']")
-    private WebElement captchaText;
+    private WebElement captchaText;  // ödeme texti(verify)
 
     public BillingPage(WebDriver driver) {
         super(driver);
