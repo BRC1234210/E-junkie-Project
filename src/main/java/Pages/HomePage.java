@@ -28,7 +28,7 @@ public class HomePage extends BasePage {
     public WebElement goHomePageButton;     // US_307 İÇİN anasayfaya dönme butonu
 
     public void clickGoHomePageButton() {
-        clickElement(goHomePageButton);
+        clickElement(goHomePageButton);       //  E-commerce by E-junkie butonuna basar.
     }
 
     @FindBy(xpath = "//a[@class='contact']")
@@ -44,11 +44,7 @@ public class HomePage extends BasePage {
         verifyDisplayed(EJunkieVerify, "EJunkie page is no displayed");
     }
 
-    @FindBy(xpath = "//a[@class='EJ-ShopLink']")
-    public WebElement eJunkieButton;                  // E-commerce by E-junkie butonuna basar.
-    public void ClickEjunkieButton(){
-        clickElement(eJunkieButton);
-    }
+
 
 
 }
