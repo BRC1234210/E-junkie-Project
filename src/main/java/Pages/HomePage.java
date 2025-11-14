@@ -44,5 +44,11 @@ public class HomePage extends BasePage {
         verifyDisplayed(EJunkieVerify, "EJunkie page is no displayed");
     }
 
+    @FindBy(xpath = "//a[@class='EJ-ShopLink']")
+    public WebElement eJunkieButton;                  // E-commerce by E-junkie butonuna basar.
+    public void ClickEjunkieButton(){
+        clickElement(eJunkieButton);
+    }
+
 
 }
