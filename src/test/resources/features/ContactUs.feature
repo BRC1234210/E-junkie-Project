@@ -2,6 +2,7 @@ Feature: Contact Us Functionality
 
   Scenario:
 
+
   Scenario Outline:
     When Navigate to the Web Page
     Then Click on the Contact Us Link
