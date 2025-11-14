@@ -57,6 +57,7 @@ public class US_306_VerifyContactUsSteps {
     public void verifyPopUp(String popUp) {
         contactUsPage.AlertMessage();
         LOGGER.info("Allert message verified");
+        LOGGER.info("Contact Us was Successful");
     }
 
 
