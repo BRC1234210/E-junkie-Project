@@ -25,7 +25,7 @@ public class BillingPage extends BasePage{
     private WebElement invalidMessageText;
 
     @FindBy(xpath = "//input[@placeholder='Name On Card']")
-    private WebElement captchaText;  // ödeme texti(verify)
+    private WebElement captchaText;  // ödeme texti (verify)
 
     public BillingPage(WebDriver driver) {
         super(driver);
@@ -38,5 +38,9 @@ public class BillingPage extends BasePage{
     }
     public void VerifyInvalidMessage(){
         verifyDisplayed(invalidMessageText,"Invalid Message is not disappear.");
+    }
+
+    public void verifyCaptchaText(){
+        verifyDisplayed(captchaText,"captcha text is not displayed");
     }
 }
