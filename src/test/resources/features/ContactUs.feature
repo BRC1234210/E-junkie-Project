@@ -1,6 +1,7 @@
 Feature: Contact Us Functionality
 
   Scenario:
+
   Scenario Outline:
     When Navigate to the Web Page
     Then Click on the Contact Us Link
@@ -9,8 +10,8 @@ Feature: Contact Us Functionality
     Then Click on the Send Message Button
     Then Verify "Recaptcha didn't match" pop up
     Examples:
-      | name | email           | subjectBox  |
-      | User | angle@gmail.com | Customer |
+      | name | email           | subjectBox |
+      | User | angle@gmail.com | Customer   |
 
 
 
