@@ -6,16 +6,20 @@ import org.openqa.selenium.support.FindBy;
 
 public class CartPage extends BasePage{
 
-    @FindBy(css = "#Overlay > div > div.container.Cart > div > div.column.one-half.RightColumn > div.Payment-Section > div > button.Payment-Button.CC")
+    @FindBy(xpath = "//iframe[@class='EJIframeV3 EJOverlayV3']")
+    public WebElement iframe;
+
+    @FindBy(css = "button.Payment-Button.CC")
     public WebElement payUsingDebitOrCreditCartButton;
 
     public CartPage(WebDriver driver) {
         super(driver);
     }
+
     public void clickPayUsingDebitOrCreditCartButton(){
+        driver.switchTo().frame(iframe);
         clickElement(payUsingDebitOrCreditCartButton);
     }
-
 
     @FindBy(xpath = "//button[@class='Pay-Button']")
     public WebElement payButton;     // ödeme yap butonu

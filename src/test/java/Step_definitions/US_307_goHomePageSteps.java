@@ -10,7 +10,8 @@ import org.openqa.selenium.WebDriver;
 import utility.BaseDriver;
 
 
-public class US_307_goHomePageSteps {
+public class
+US_307_goHomePageSteps {
 
     WebDriver driver;
     HomePage homePages;

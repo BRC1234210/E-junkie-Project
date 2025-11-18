@@ -46,7 +46,7 @@ public class US_305_DownloadEbookSteps {
 
     @And("the customer fills in all required fields")
     public void theCustomerFillsInAllRequiredFields() {
-    billingPage.fillInformationMask();
+    billingPage.fillInformationMaskWithValidNumber();
     }
 
 
