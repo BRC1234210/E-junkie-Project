@@ -19,6 +19,7 @@ public class US_304_VerifySuccessfulBillPaymentStep {
         billingPage.fillInformationMaskWithValidNumber();
     }
 
+
     @Then("Verify success paying message")
     public void verifySuccessPayingMessage() {
         billingPage.verifyCaptchaText();
