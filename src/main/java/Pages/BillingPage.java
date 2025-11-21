@@ -38,7 +38,6 @@ public class BillingPage extends BasePage{
         super(driver);
     }
 
-
     public void fillInformationMaskWithInvalidNumber(){
         clickElement(eMailInput);
         sendKeysToElement(eMailInput, ConfigReader.getProperty("email"));
