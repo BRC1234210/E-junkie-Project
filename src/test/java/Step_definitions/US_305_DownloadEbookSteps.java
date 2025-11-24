@@ -43,5 +43,7 @@ public class US_305_DownloadEbookSteps {
         billingPage.VerifyInvalidMessage();
     }
 
+    
     // ödeme işleminden ileriye CAPTCHA yüüznden geçemediğim için otomasyonumu devam ettiremiyorum.
+    // devam edemedğim için yalnızca ödeme işlemini yazptığımı doğrulayıp bıraktım
 }
