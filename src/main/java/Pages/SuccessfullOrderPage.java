@@ -16,7 +16,7 @@ public class SuccessfullOrderPage extends BasePage{
     @FindBy(xpath = "//span[@class='download_btn top10']")
     public WebElement downloadButton;
 
-    public void clickDownloadaButton(){
+    public void clickDownloadButton(){
         clickElement(downloadButton);
     }
 

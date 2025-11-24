@@ -10,7 +10,7 @@ import java.io.ObjectInputFilter;
 
 public class BillingPage extends BasePage{
 
-    @FindBy(xpath = "//input[@placeholder='Email']")
+    @FindBy(css = "input[placeholder='Email']")
     private WebElement eMailInput;
 
     @FindBy(xpath = "//input[@placeholder='Confirm Email']")
